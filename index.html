@@ -1,0 +1,304 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Gattas-Moras | Strategic Consultant Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* New masculine, professional color palette */
+            --main-dark-blue: #2C3E50; /* Deep blue for headings, strong accents */
+            --accent-blue: #3498DB;   /* Vibrant blue for highlights, icons */
+            --light-bg-gray: #F4F6F9; /* Very light background for body and some cards */
+            --border-gray: #D7DBDD;   /* Subtle gray for borders and dividers */
+            --text-gray: #5D6D7E;     /* Standard text color */
+            --hover-border-blue: #2980B9; /* Slightly darker blue for hover states */
+            --white: #FFFFFF;         /* Pure white for card backgrounds */
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--light-bg-gray); /* Solid background for a sharp look */
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Main heading now uses a solid color for sharpness */
+        .main-heading-color {
+            color: var(--main-dark-blue);
+        }
+        
+        .section-divider {
+            height: 3px;
+            background-color: var(--accent-blue); /* Solid accent color */
+            border-radius: 2px;
+            margin: 2rem 0;
+        }
+        
+        .focus-card {
+            background-color: var(--white); /* Solid white background */
+            border: 2px solid var(--border-gray);
+            transition: all 0.3s ease;
+        }
+        
+        .focus-card:hover {
+            border-color: var(--hover-border-blue); /* Professional hover accent */
+            transform: translateY(-2px);
+        }
+        
+        .service-table {
+            background: var(--white);
+            border: 2px solid var(--border-gray);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .service-header {
+            background-color: var(--main-dark-blue); /* Solid dark blue for header */
+            color: white;
+        }
+        
+        .contact-item {
+            background-color: var(--light-bg-gray);
+            border: 2px solid var(--border-gray);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            border-color: var(--accent-blue); /* Accent color on hover */
+            background-color: var(--white);
+        }
+        
+        .icon-accent {
+            color: var(--accent-blue); /* Icons now use the vibrant accent blue */
+        }
+        
+        /* Specific element color adjustments */
+        .text-deep-plum { /* Re-purposing this for primary text */
+            color: var(--main-dark-blue);
+        }
+        .text-bold-violet { /* Re-purposing for secondary accents */
+            color: var(--accent-blue);
+        }
+        .border-poppy-pink { /* Re-purposing for strong border accent */
+            border-left-color: var(--accent-blue);
+        }
+        .text-poppy-pink-bullet { /* For list bullets */
+            color: var(--accent-blue);
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .focus-card:hover,
+            .contact-item:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen p-6 max-w-4xl mx-auto">
+    <!-- Header Section -->
+    <div class="text-center mb-8">
+        <div class="mb-4">
+            <div class="w-16 h-1 mx-auto mb-4" style="background-color: var(--accent-blue);"></div>
+        </div>
+        <h1 class="poppins text-4xl font-bold main-heading-color mb-2">Ricardo Gattas-Moras</h1>
+        <p class="text-xl font-semibold mb-2 text-deep-plum">Strategic Consultant for Internal Communications, Engagement & Culture</p>
+        <p class="text-lg font-medium text-bold-violet">CEO & Executive Owner, Poppy Marketing & Consulting</p>
+    </div>
+
+    <!-- Overview Section -->
+    <div class="mb-8">
+        <div class="flex items-center mb-4">
+            <i class="fas fa-compass icon-accent text-2xl mr-3"></i>
+            <h2 class="poppins text-2xl font-bold text-deep-plum">Overview</h2>
+        </div>
+        <p class="text-lg leading-relaxed bg-white p-6 rounded-lg border-l-4 border-poppy-pink shadow-sm">
+            Ricardo helps corporate teams transform how they connect with their people. With nearly two decades of experience in corporate leadership, he blends communication strategy, employee engagement, and AI-powered tools to help People Teams, Communications Leaders, and Culture Champions lead with clarity, creativity, and purpose.
+        </p>
+    </div>
+
+    <!-- Focus Areas Section -->
+    <div class="mb-8">
+        <div class="flex items-center mb-6">
+            <i class="fas fa-key icon-accent text-2xl mr-3"></i>
+            <h2 class="poppins text-2xl font-bold text-deep-plum">Focus Areas</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Communications Strategy -->
+            <div class="focus-card p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-bullhorn icon-accent text-xl mr-3"></i>
+                    <h3 class="poppins text-lg font-semibold text-deep-plum">Communications Strategy</h3>
+                </div>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Internal campaign planning</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Messaging frameworks</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Executive voice development</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>AI-powered content toolkits</li>
+                </ul>
+            </div>
+
+            <!-- Employee Engagement -->
+            <div class="focus-card p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-users icon-accent text-xl mr-3"></i>
+                    <h3 class="poppins text-lg font-semibold text-deep-plum">Employee Engagement Consulting</h3>
+                </div>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Recognition & experience design</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Survey planning & culture insights</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Moments that matter calendar planning</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Event and program messaging</li>
+                </ul>
+            </div>
+
+            <!-- Organizational Alignment -->
+            <div class="focus-card p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-sitemap icon-accent text-xl mr-3"></i>
+                    <h3 class="poppins text-lg font-semibold text-deep-plum">Organizational Alignment</h3>
+                </div>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Rollout messaging for new programs</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Culture and brand audits</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Cross-functional communication plans</li>
+                    <li class="flex items-start"><span class="text-xs mr-2 mt-1 text-poppy-pink-bullet">•</span>Internal storytelling strategies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ideal Clients Section -->
+    <div class="mb-8">
+        <div class="flex items-center mb-4">
+            <i class="fas fa-building icon-accent text-2xl mr-3"></i>
+            <h2 class="poppins text-2xl font-bold text-deep-plum">Ideal Clients</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-lg border-l-4 border-poppy-pink flex items-center shadow-sm">
+                <i class="fas fa-users text-lg mr-3 text-bold-violet"></i>
+                <span>People Teams scaling internal messaging</span>
+            </div>
+            <div class="bg-white p-4 rounded-lg border-l-4 border-poppy-pink flex items-center shadow-sm">
+                <i class="fas fa-chart-line text-lg mr-3 text-bold-violet"></i>
+                <span>Comms or Culture Leads driving change</span>
+            </div>
+            <div class="bg-white p-4 rounded-lg border-l-4 border-poppy-pink flex items-center shadow-sm">
+                <i class="fas fa-heart text-lg mr-3 text-bold-violet"></i>
+                <span>HR/EX leaders looking to boost engagement</span>
+            </div>
+            <div class="bg-white p-4 rounded-lg border-l-4 border-poppy-pink flex items-center shadow-sm">
+                <i class="fas fa-rocket text-lg mr-3 text-bold-violet"></i>
+                <span>L&D or Ops teams launching org-wide initiatives</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Engagement Options Section -->
+    <div class="mb-8">
+        <div class="flex items-center mb-4">
+            <i class="fas fa-puzzle-piece icon-accent text-2xl mr-3"></i>
+            <h2 class="poppins text-2xl font-bold text-deep-plum">Engagement Options</h2>
+        </div>
+        
+        <div class="service-table">
+            <div class="service-header p-4">
+                <div class="grid grid-cols-3 gap-4 font-semibold poppins">
+                    <div>Service</div>
+                    <div>Duration</div>
+                    <div>Best For</div>
+                </div>
+            </div>
+            <div class="divide-y" style="divide-color: var(--border-gray);">
+                <div class="p-4 grid grid-cols-3 gap-4 items-center">
+                    <div class="font-semibold text-deep-plum">Messaging & Campaign Sprint</div>
+                    <div>2–3 weeks</div>
+                    <div class="text-sm">Launching a new initiative or change</div>
+                </div>
+                <div class="p-4 grid grid-cols-3 gap-4 items-center" style="background-color: var(--light-bg-gray);">
+                    <div class="font-semibold text-deep-plum">Fractional Communications Partner</div>
+                    <div>Monthly</div>
+                    <div class="text-sm">Ongoing support for People & Culture teams</div>
+                </div>
+                <div class="p-4 grid grid-cols-3 gap-4 items-center">
+                    <div class="font-semibold text-deep-plum">Team Experience Review</div>
+                    <div>1–2 weeks</div>
+                    <div class="text-sm">Pulse check + action plan for retention and alignment</div>
+                </div>
+                <div class="p-4 grid grid-cols-3 gap-4 items-center" style="background-color: var(--light-bg-gray);">
+                    <div class="font-semibold text-deep-plum">Executive Messaging & Leadership Voice</div>
+                    <div>Custom</div>
+                    <div class="text-sm">Leadership tone, coaching, and internal influence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="mb-4">
+        <div class="flex items-center mb-6">
+            <i class="fas fa-phone icon-accent text-2xl mr-3"></i>
+            <h2 class="poppins text-2xl font-bold text-deep-plum">Contact</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="contact-item p-4 rounded-lg shadow-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-envelope icon-accent text-lg mr-3"></i>
+                    <div>
+                        <div class="font-semibold text-deep-plum">Email</div>
+                        <div class="text-sm">email@poppy-marketing.com</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-item p-4 rounded-lg shadow-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-globe icon-accent text-lg mr-3"></i>
+                    <div>
+                        <div class="font-semibold text-deep-plum">Website</div>
+                        <div class="text-sm">www.poppymarketingandconsulting.com</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-item p-4 rounded-lg shadow-sm">
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin icon-accent text-lg mr-3"></i>
+                    <div>
+                        <div class="font-semibold text-deep-plum">LinkedIn</div>
+                        <div class="text-sm">linkedin.com/in/ricardo-gattas-moras</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-item p-4 rounded-lg shadow-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-mobile-alt icon-accent text-lg mr-3"></i>
+                    <div>
+                        <div class="font-semibold text-deep-plum">Phone/Text</div>
+                        <div class="text-sm">(941) 777-4933</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center mt-12 pt-6 border-t-2" style="border-color: var(--border-gray);">
+        <div class="w-24 h-1 mx-auto mb-4" style="background-color: var(--accent-blue);"></div>
+        <p class="text-sm" style="color: var(--text-gray);">Poppy Marketing & Consulting • Transforming Corporate Communications</p>
+    </div>
+</body>
+</html>
